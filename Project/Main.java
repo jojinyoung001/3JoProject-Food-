@@ -3,8 +3,6 @@ package Project;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import D.D;
-
 class Food {
 	private String food;
 
@@ -47,6 +45,9 @@ public class Main {
 				}
 				break;
 			case 2:
+				for (int j = 0; j < fd.size(); j++) {
+					System.out.println((j + 1) + "번째 식당 : " + fd.get(j).getFood());
+				}
 				break;
 			case 3:
 				break;
