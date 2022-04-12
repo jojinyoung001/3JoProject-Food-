@@ -13,6 +13,9 @@ class Food {
 	public void setFood(String food) {
 		this.food = food;
 	}
+	public void print() {
+		System.out.println(food);
+	}
 }
 
 public class Main {
@@ -52,6 +55,8 @@ public class Main {
 			case 3:
 				break;
 			case 4:
+				fd.get((int) (Math.random()*fd.size())).print();
+				
 				break;
 			}
 		}
