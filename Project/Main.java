@@ -1,16 +1,26 @@
 package Project;
+
 import java.util.ArrayList;
 import java.util.Scanner;
+import Project.C;
 
-class Food{
+class Food {
 	private String food;
-	public String getFood() {return food;}
-	public void setFood(String food) {this.food = food;}
+
+	public String getFood() {
+		return food;
+	}
+
+	public void setFood(String food) {
+		this.food = food;
+	}
 }
 
 public class Main {
 public static void main(String[] args) {
 	ArrayList<Food> fd = new ArrayList<Food>();
+	int fixNum;
+	String fixName;
 	
 	Scanner sc = new Scanner(System.in);
 	while(true) {
@@ -26,6 +36,17 @@ public static void main(String[] args) {
 		case 2:
 			break;
 		case 3:
+			for(Food food : fd) {
+				System.out.println("수정할 수 있는 목록입니다");
+				for(int k=0;k<fd.size();k++) {
+				System.out.println(k+"."+food.getFood());
+				}
+				System.out.println("수정할 번호와 내용을 입력하세요");
+				fixNum = sc.nextInt();
+				fixName = sc.next();
+				
+				
+			}
 			break;
 		case 4:
 			break;
