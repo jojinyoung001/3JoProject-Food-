@@ -31,8 +31,8 @@ public class Main {
 			case 1:
 				break;
 			case 2:
-				for (int i = 0; i < fd.size(); i++) {
-					System.out.println((i + 1) + "번째 식당 : " + fd.get(i).getFood());
+				for (int j = 0; j < fd.size(); j++) {
+					System.out.println((j + 1) + "번째 식당 : " + fd.get(j).getFood());
 				}
 				break;
 			case 3:
@@ -41,6 +41,5 @@ public class Main {
 				break;
 			}
 		}
-
 	}
 }
